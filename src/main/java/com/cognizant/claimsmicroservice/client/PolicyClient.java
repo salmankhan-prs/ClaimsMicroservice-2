@@ -16,7 +16,7 @@ import com.cognizant.claimsmicroservice.model.ProviderPolicy;
 /*Proxy for policy microservice 
  *4 end points
 */
-@FeignClient(name = "policy-microservice", url = "http://localhost:8096/policy")
+@FeignClient(name = "policy-microservice", url = "http://13.58.229.71:8010/policy")
 public interface PolicyClient {
 
 	@RequestMapping(value = "/saveProvider", method = RequestMethod.POST)

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import com.cognizant.claimsmicroservice.model.AuthenticationResponse;
 
-@FeignClient(name = "authenticationFeignClient",url = "${AUTH_SERVICE:http://localhost:8089}")
+@FeignClient(name = "authenticationFeignClient",url = "${AUTH_SERVICE:http://18.223.112.239:8089}")
 public interface AuthClient {
 
 	@GetMapping("/authorization/validate") 
